@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Conversor Avançado de TXT para PDF</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+        input, select, button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 1rem;
+        }
+        #file-info, #pdf-display {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        iframe {
+            width: 100%;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conversor Avançado de TXT para PDF</h1>
+    <form>
+        <input type="file" id="txtFile" accept=".txt">
+        <br>
+        <label for="fontSize">Tamanho da Fonte:</label>
+        <select id="fontSize">
+            <option value="12">Pequena</option>
+            <option value="16" selected>Média</option>
+            <option value="20">Grande</option>
+        </select>
